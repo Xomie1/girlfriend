@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e7a6a6;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main container: Uses Flexbox for side-by-side layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Video box styling */
+.video-box {
+  width: 200px;
+  height: 214px;
+  border-radius: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling for the text & buttons */
+.text-container {
+  text-align: center;
+  max-width: 300px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #242323;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
+.yes-button, .no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yes-button { background-color: #4caf50; }
+.no-button { background-color: #f44336; }
+
+/* Center GIFs below */
+.gif-container {
+  margin-top: 20px;
+  text-align: center;
+}
+.gif-container img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Responsive: Adjust for smaller screens */
+@media screen and (max-width: 700px) {
+  .container {
+      flex-direction: column;
+  }
+  .video-box {
+      width: 150px;
+      height: 180px;
+  }
+  .text-container {
+      max-width: 100%;
+  }
+}
